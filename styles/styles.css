@@ -92,18 +92,30 @@ nav ul li:first-child{
     font-size: 1.5rem;
 }
 
-#portfolio figure{
-    border: 1px solid red;
+#portfolio ul{
     display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 figure{
-    border-radius: 0.5rem;
     box-shadow: 0 6px 20px 0 #00000030;
     text-align: center;
     padding: 4.5rem 3rem;
     margin: 1.5rem auto;
-    max-width: 20rem;
+    flex-grow: 1;
+}
+
+#portfolio img{
+    min-width:20rem;
+}
+
+/*Media Queries main*/
+@media (max-width: 45em) {
+
+    #portfolio ul{
+        flex-direction: column;
+    }
 }
 
 /*Footer*/
@@ -117,7 +129,7 @@ footer a{
     color: mediumblue;
 }
 
-/*Media Queries*/
+/*Media Queries footer*/
 @media (max-width: 75em) {
 
     h1{
