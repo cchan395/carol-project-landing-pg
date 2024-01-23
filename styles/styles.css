@@ -16,7 +16,7 @@ html {
   }
 
   body {
-	font-family: Montserrat,Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-family: Montserrat, Arial,"Helvetica Neue",Helvetica,sans-serif;
     text-align: center;
 	font-size: 1rem;
 	font-weight: 400;
@@ -34,7 +34,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 h2{
     font-size: 3rem;
@@ -58,7 +58,11 @@ a:hover{
 }
 
 a:active{
-	color: midnightblue;
+	color: #191970;
+}
+
+a:focus{
+    outline: 1px dotted #000;
 }
 
 /*header*/
@@ -88,13 +92,17 @@ nav ul li:first-child{
     font-size: 1.5rem;
 }
 
+#portfolio figure{
+    border: 1px solid red;
+    display: flex;
+}
+
 figure{
     border-radius: 0.5rem;
     box-shadow: 0 6px 20px 0 #00000030;
     text-align: center;
     padding: 4.5rem 3rem;
     margin: 1.5rem auto;
-    flex-grow: 1;
     max-width: 20rem;
 }
 
@@ -110,7 +118,7 @@ footer a{
 }
 
 /*Media Queries*/
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
 
     h1{
         margin: 0;
